@@ -1,7 +1,7 @@
 import argparse
 def can_play_today (temp_day, match):
     for i in temp_day:
-        if ((i[0][0] is match[0]) or (i[0][0] is match[1]) or (i[0][1] is match[0]) or (i[0][1] is match[1])):
+        if ((i[0][0] == match[0]) | (i[0][0] == match[1]) | (i[0][1] == match[0]) | (i[0][1] == match[1])):
             return 0
     return 1
 def match_programed (program, match):
